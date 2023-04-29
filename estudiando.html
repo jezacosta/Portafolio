@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+
+<h1>JUEGO SECRETO</h1>
+
+
+<input/>
+<button>Verificar si acerto con el secreto</button>
+
+
+<script>
+
+	function imprimir(frase) {
+		document.write(frase);
+	}
+
+	var secreto = [3,5,7,9];
+	var input = document.querySelector("input");
+	input.focus();//pone el cursor en el cuadro 
+	function verificar(){
+
+		var encontrado = false;
+
+		for(var posicion = 0;posicion < secreto.length; posicion ++){
+
+			if(secreto[posicion] == parseInt(input.value)){
+
+			alert("Usted acerto");
+			encontrado = true;
+			break;
+			}
+		}
+		if (encontrado == false){
+			alert("usted erro");	
+		}
+
+
+		
+
+		input.value = "";
+		input.focus();
+	}
+	
+	var button = document.querySelector("button");
+	button.onclick = verificar;
+
+	/* function saltarlinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	
+	
+	function calcularIMC(altura,peso){
+		imc = peso/(altura*altura);
+		return (imc);
+	}
+
+	nombre = prompt("infomre su nombre");
+
+	pesoInformado = prompt("informe su peso:");
+	alturaInformado = prompt("informe su altura:");
+	imcCalculado=calcularIMC(alturaInformado,pesoInformado);
+	imprimir(nombre + " Su indice de masa corporal es:"+imcCalculado);
+	
+
+	var victorias = parseInt(prompt("Infomre la cantidad de victorias"));
+	var empates = parseInt(prompt("Infomre la cantidad de empates"));
+	var puntosTotal = (victorias * 3 ) + empates;
+	imprimir("El total de puntos del equipo es: "+ puntosTotal);
+
+	*/
+
+
+
+
+
+
+
+</script>
