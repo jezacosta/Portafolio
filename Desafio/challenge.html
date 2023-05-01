@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>Challenge Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section class="principal">
+
+                <h1>Iniciando desafio Challenge</h1>
+
+                <textarea cols="70" rows="10" id="texto"class="texto" required placeholder="Ingrese texto aqui"></textarea>
+            
+            </section>
+            <section class="boton-encriptar">
+
+                <button>encriptar</button>
+
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+</html>
+<script>
+    var textarea = document.querySelector("textarea");
+	textarea.focus();
+
+
+    function encripatar (){
+       
+
+        var textocifrado = textarea.replace(/a/igm,"ai");
+        var textocifrado = textocifrado.replace(/e/igm,"enter");
+        var textocifrado = textocifrado.replace(/i/igm,"imes");
+        var textocifrado = textocifrado.replace(/o/igm,"ober");
+        var textocifrado = textocifrado.replace(/u/igm,"ufat");
+
+        document.write(textocifrado);
+
+    }
+
+    var button = document.querySelector("button");
+	button.onclick = encripatar;
+    
+</script>
