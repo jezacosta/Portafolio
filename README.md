@@ -1,3 +1,3 @@
 # Portafolio
 
-<a href="https://jezacosta.github.io/Portafolio/">Visualiza mi repositorio</a>
+<a href="https://github.com/jezacosta/Portafolio">Visualiza mi repositorio</a>
